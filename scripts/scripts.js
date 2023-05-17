@@ -20,6 +20,9 @@ const LCP_BLOCKS = []; // add your LCP blocks to the list
  * @param {Element} main The container element
  */
 function buildHeroBlock(main) {
+  function buildHeroBlock(main) {
+    if(main.querySelector('.hero')) return;  //check to see if block is defined
+  
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
